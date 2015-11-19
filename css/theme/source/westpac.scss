@@ -1,0 +1,61 @@
+/**
+ * Westpac theme for reveal.js
+ *
+ * Copyright (C) 2015 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/roboto/roboto.css);
+
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #f4f3f0;
+
+$mainColor: #621a4b;
+$headingColor: #621a4b;
+
+$mainFontSize: 36px;
+$mainFont: Roboto, Helvetica, sans-serif;
+$headingFont: Roboto, Helvetica, sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: normal;
+$linkColor: #621a4b;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.5em;
+$heading2Size: 1.5em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-light-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #621a4b;
+	}
+}
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6, a {
+		color: #fff;
+	}
+}
+
+
+.imageOverlay {
+	background-color:rgba(244, 243, 240, 0.5);
+	padding: 50px 0;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
